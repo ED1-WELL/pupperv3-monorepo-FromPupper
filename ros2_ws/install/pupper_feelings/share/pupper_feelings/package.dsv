@@ -1,0 +1,9 @@
+source;share/pupper_feelings/hook/pythonpath.ps1
+source;share/pupper_feelings/hook/pythonpath.dsv
+source;share/pupper_feelings/hook/pythonpath.sh
+source;share/pupper_feelings/hook/ament_prefix_path.ps1
+source;share/pupper_feelings/hook/ament_prefix_path.dsv
+source;share/pupper_feelings/hook/ament_prefix_path.sh
+source;../../build/pupper_feelings/share/pupper_feelings/hook/pythonpath_develop.ps1
+source;../../build/pupper_feelings/share/pupper_feelings/hook/pythonpath_develop.dsv
+source;../../build/pupper_feelings/share/pupper_feelings/hook/pythonpath_develop.sh

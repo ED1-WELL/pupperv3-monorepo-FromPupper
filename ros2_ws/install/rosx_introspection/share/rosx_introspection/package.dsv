@@ -1,0 +1,8 @@
+source;share/rosx_introspection/hook/cmake_prefix_path.ps1
+source;share/rosx_introspection/hook/cmake_prefix_path.dsv
+source;share/rosx_introspection/hook/cmake_prefix_path.sh
+source;share/rosx_introspection/local_setup.bash
+source;share/rosx_introspection/local_setup.dsv
+source;share/rosx_introspection/local_setup.ps1
+source;share/rosx_introspection/local_setup.sh
+source;share/rosx_introspection/local_setup.zsh
