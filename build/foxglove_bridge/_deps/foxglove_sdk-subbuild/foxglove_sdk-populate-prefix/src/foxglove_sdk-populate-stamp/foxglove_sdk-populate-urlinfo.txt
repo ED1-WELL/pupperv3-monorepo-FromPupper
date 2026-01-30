@@ -1,0 +1,12 @@
+# This is a generated file and its contents are an internal implementation detail.
+# The download step will be re-executed if anything in this file changes.
+# No other meaning or use of this file is supported.
+
+method=url
+command=/usr/bin/cmake;-P;/home/pi/pupperv3-monorepo/ros2_ws/build/foxglove_bridge/_deps/foxglove_sdk-subbuild/foxglove_sdk-populate-prefix/src/foxglove_sdk-populate-stamp/download-foxglove_sdk-populate.cmake;COMMAND;/usr/bin/cmake;-P;/home/pi/pupperv3-monorepo/ros2_ws/build/foxglove_bridge/_deps/foxglove_sdk-subbuild/foxglove_sdk-populate-prefix/src/foxglove_sdk-populate-stamp/verify-foxglove_sdk-populate.cmake;COMMAND;/usr/bin/cmake;-P;/home/pi/pupperv3-monorepo/ros2_ws/build/foxglove_bridge/_deps/foxglove_sdk-subbuild/foxglove_sdk-populate-prefix/src/foxglove_sdk-populate-stamp/extract-foxglove_sdk-populate.cmake
+source_dir=/home/pi/pupperv3-monorepo/ros2_ws/build/foxglove_bridge/_deps/foxglove_sdk-src
+work_dir=/home/pi/pupperv3-monorepo/ros2_ws/build/foxglove_bridge/_deps
+url(s)=https://github.com/foxglove/foxglove-sdk/releases/download/sdk%2Fv0.14.2/foxglove-v0.14.2-cpp-aarch64-unknown-linux-gnu.zip
+hash=SHA256=f54e3e08926a8882a9bc8031cfb24a040be2638f1ef4e87236fa3aded1ab2a23
+no_extract=
+

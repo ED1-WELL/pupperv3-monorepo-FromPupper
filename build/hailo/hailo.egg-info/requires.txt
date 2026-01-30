@@ -1,0 +1,6 @@
+Pillow
+loguru
+numpy
+opencv-python
+setuptools
+supervision

@@ -1,0 +1,16 @@
+package.xml
+setup.cfg
+setup.py
+openai_bridge/__init__.py
+openai_bridge/audio_util.py
+openai_bridge/realtime_client.py
+openai_bridge/realtime_client_class.py
+openai_bridge/ros_node.py
+openai_bridge.egg-info/PKG-INFO
+openai_bridge.egg-info/SOURCES.txt
+openai_bridge.egg-info/dependency_links.txt
+openai_bridge.egg-info/entry_points.txt
+openai_bridge.egg-info/requires.txt
+openai_bridge.egg-info/top_level.txt
+openai_bridge.egg-info/zip-safe
+resource/openai_bridge

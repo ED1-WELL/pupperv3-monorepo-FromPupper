@@ -1,0 +1,95 @@
+/home/pi/pupperv3-monorepo/ros2_ws/install/pupper_v3_description/share/pupper_v3_description/description/components.xacro
+/home/pi/pupperv3-monorepo/ros2_ws/install/pupper_v3_description/share/pupper_v3_description/description/meshes/dae/Body V4 v70.001.dae
+/home/pi/pupperv3-monorepo/ros2_ws/install/pupper_v3_description/share/pupper_v3_description/description/meshes/dae/BodyV4v70.001.dae
+/home/pi/pupperv3-monorepo/ros2_ws/install/pupper_v3_description/share/pupper_v3_description/description/meshes/dae/Leg Assembly For Flanged v26.001.dae
+/home/pi/pupperv3-monorepo/ros2_ws/install/pupper_v3_description/share/pupper_v3_description/description/meshes/dae/Leg Assembly For Flanged v26.002.dae
+/home/pi/pupperv3-monorepo/ros2_ws/install/pupper_v3_description/share/pupper_v3_description/description/meshes/dae/Leg Assembly For Flanged v26.003.dae
+/home/pi/pupperv3-monorepo/ros2_ws/install/pupper_v3_description/share/pupper_v3_description/description/meshes/dae/Leg Assembly For Flanged v26.005.dae
+/home/pi/pupperv3-monorepo/ros2_ws/install/pupper_v3_description/share/pupper_v3_description/description/meshes/dae/Leg Assembly For Flanged v26.006.dae
+/home/pi/pupperv3-monorepo/ros2_ws/install/pupper_v3_description/share/pupper_v3_description/description/meshes/dae/Leg Assembly For Flanged v26.007.dae
+/home/pi/pupperv3-monorepo/ros2_ws/install/pupper_v3_description/share/pupper_v3_description/description/meshes/dae/Leg Assembly For Flanged v26.010.dae
+/home/pi/pupperv3-monorepo/ros2_ws/install/pupper_v3_description/share/pupper_v3_description/description/meshes/dae/Leg Assembly For Flanged v26.011.dae
+/home/pi/pupperv3-monorepo/ros2_ws/install/pupper_v3_description/share/pupper_v3_description/description/meshes/dae/Leg Assembly For Flanged v26.012.dae
+/home/pi/pupperv3-monorepo/ros2_ws/install/pupper_v3_description/share/pupper_v3_description/description/meshes/dae/Leg Assembly For Flanged v26.013.dae
+/home/pi/pupperv3-monorepo/ros2_ws/install/pupper_v3_description/share/pupper_v3_description/description/meshes/dae/Leg Assembly For Flanged v26.014.dae
+/home/pi/pupperv3-monorepo/ros2_ws/install/pupper_v3_description/share/pupper_v3_description/description/meshes/dae/Leg Assembly For Flanged v26.015.dae
+/home/pi/pupperv3-monorepo/ros2_ws/install/pupper_v3_description/share/pupper_v3_description/description/meshes/dae/LegAssemblyForFlangedv26.001.dae
+/home/pi/pupperv3-monorepo/ros2_ws/install/pupper_v3_description/share/pupper_v3_description/description/meshes/dae/LegAssemblyForFlangedv26.002.dae
+/home/pi/pupperv3-monorepo/ros2_ws/install/pupper_v3_description/share/pupper_v3_description/description/meshes/dae/LegAssemblyForFlangedv26.003.dae
+/home/pi/pupperv3-monorepo/ros2_ws/install/pupper_v3_description/share/pupper_v3_description/description/meshes/dae/LegAssemblyForFlangedv26.005.dae
+/home/pi/pupperv3-monorepo/ros2_ws/install/pupper_v3_description/share/pupper_v3_description/description/meshes/dae/LegAssemblyForFlangedv26.006.dae
+/home/pi/pupperv3-monorepo/ros2_ws/install/pupper_v3_description/share/pupper_v3_description/description/meshes/dae/LegAssemblyForFlangedv26.007.dae
+/home/pi/pupperv3-monorepo/ros2_ws/install/pupper_v3_description/share/pupper_v3_description/description/meshes/dae/LegAssemblyForFlangedv26.010.dae
+/home/pi/pupperv3-monorepo/ros2_ws/install/pupper_v3_description/share/pupper_v3_description/description/meshes/dae/LegAssemblyForFlangedv26.011.dae
+/home/pi/pupperv3-monorepo/ros2_ws/install/pupper_v3_description/share/pupper_v3_description/description/meshes/dae/LegAssemblyForFlangedv26.012.dae
+/home/pi/pupperv3-monorepo/ros2_ws/install/pupper_v3_description/share/pupper_v3_description/description/meshes/dae/LegAssemblyForFlangedv26.013.dae
+/home/pi/pupperv3-monorepo/ros2_ws/install/pupper_v3_description/share/pupper_v3_description/description/meshes/dae/LegAssemblyForFlangedv26.014.dae
+/home/pi/pupperv3-monorepo/ros2_ws/install/pupper_v3_description/share/pupper_v3_description/description/meshes/dae/LegAssemblyForFlangedv26.015.dae
+/home/pi/pupperv3-monorepo/ros2_ws/install/pupper_v3_description/share/pupper_v3_description/description/meshes/stl/BodyV4v70_001.stl
+/home/pi/pupperv3-monorepo/ros2_ws/install/pupper_v3_description/share/pupper_v3_description/description/meshes/stl/LegAssemblyForFlangedv26_001.stl
+/home/pi/pupperv3-monorepo/ros2_ws/install/pupper_v3_description/share/pupper_v3_description/description/meshes/stl/LegAssemblyForFlangedv26_002.stl
+/home/pi/pupperv3-monorepo/ros2_ws/install/pupper_v3_description/share/pupper_v3_description/description/meshes/stl/LegAssemblyForFlangedv26_003.stl
+/home/pi/pupperv3-monorepo/ros2_ws/install/pupper_v3_description/share/pupper_v3_description/description/meshes/stl/LegAssemblyForFlangedv26_005.stl
+/home/pi/pupperv3-monorepo/ros2_ws/install/pupper_v3_description/share/pupper_v3_description/description/meshes/stl/LegAssemblyForFlangedv26_006.stl
+/home/pi/pupperv3-monorepo/ros2_ws/install/pupper_v3_description/share/pupper_v3_description/description/meshes/stl/LegAssemblyForFlangedv26_007.stl
+/home/pi/pupperv3-monorepo/ros2_ws/install/pupper_v3_description/share/pupper_v3_description/description/meshes/stl/LegAssemblyForFlangedv26_010.stl
+/home/pi/pupperv3-monorepo/ros2_ws/install/pupper_v3_description/share/pupper_v3_description/description/meshes/stl/LegAssemblyForFlangedv26_011.stl
+/home/pi/pupperv3-monorepo/ros2_ws/install/pupper_v3_description/share/pupper_v3_description/description/meshes/stl/LegAssemblyForFlangedv26_012.stl
+/home/pi/pupperv3-monorepo/ros2_ws/install/pupper_v3_description/share/pupper_v3_description/description/meshes/stl/LegAssemblyForFlangedv26_013.stl
+/home/pi/pupperv3-monorepo/ros2_ws/install/pupper_v3_description/share/pupper_v3_description/description/meshes/stl/LegAssemblyForFlangedv26_014.stl
+/home/pi/pupperv3-monorepo/ros2_ws/install/pupper_v3_description/share/pupper_v3_description/description/meshes/stl/LegAssemblyForFlangedv26_015.stl
+/home/pi/pupperv3-monorepo/ros2_ws/install/pupper_v3_description/share/pupper_v3_description/description/mujoco_xml/actuators.xml
+/home/pi/pupperv3-monorepo/ros2_ws/install/pupper_v3_description/share/pupper_v3_description/description/mujoco_xml/assets.xml
+/home/pi/pupperv3-monorepo/ros2_ws/install/pupper_v3_description/share/pupper_v3_description/description/mujoco_xml/defaults.xml
+/home/pi/pupperv3-monorepo/ros2_ws/install/pupper_v3_description/share/pupper_v3_description/description/mujoco_xml/exported_mjmodel.xml
+/home/pi/pupperv3-monorepo/ros2_ws/install/pupper_v3_description/share/pupper_v3_description/description/mujoco_xml/hfield_mjx_model_for_baruch.xml
+/home/pi/pupperv3-monorepo/ros2_ws/install/pupper_v3_description/share/pupper_v3_description/description/mujoco_xml/home_keyframe.xml
+/home/pi/pupperv3-monorepo/ros2_ws/install/pupper_v3_description/share/pupper_v3_description/description/mujoco_xml/model_with_obstacles.xml
+/home/pi/pupperv3-monorepo/ros2_ws/install/pupper_v3_description/share/pupper_v3_description/description/mujoco_xml/pupper_v3_complete.backlash.xml
+/home/pi/pupperv3-monorepo/ros2_ws/install/pupper_v3_description/share/pupper_v3_description/description/mujoco_xml/pupper_v3_complete.fixed_base.xml
+/home/pi/pupperv3-monorepo/ros2_ws/install/pupper_v3_description/share/pupper_v3_description/description/mujoco_xml/pupper_v3_complete.mjx.fixed_base.xml
+/home/pi/pupperv3-monorepo/ros2_ws/install/pupper_v3_description/share/pupper_v3_description/description/mujoco_xml/pupper_v3_complete.mjx.position.feet_only.no_plane.xml
+/home/pi/pupperv3-monorepo/ros2_ws/install/pupper_v3_description/share/pupper_v3_description/description/mujoco_xml/pupper_v3_complete.mjx.position.feet_only.xml
+/home/pi/pupperv3-monorepo/ros2_ws/install/pupper_v3_description/share/pupper_v3_description/description/mujoco_xml/pupper_v3_complete.mjx.position.fixed_base.xml
+/home/pi/pupperv3-monorepo/ros2_ws/install/pupper_v3_description/share/pupper_v3_description/description/mujoco_xml/pupper_v3_complete.mjx.position.no_body.self_collision.two_iterations.xml
+/home/pi/pupperv3-monorepo/ros2_ws/install/pupper_v3_description/share/pupper_v3_description/description/mujoco_xml/pupper_v3_complete.mjx.position.no_body.self_collision.weak.xml
+/home/pi/pupperv3-monorepo/ros2_ws/install/pupper_v3_description/share/pupper_v3_description/description/mujoco_xml/pupper_v3_complete.mjx.position.no_body.self_collision.xml
+/home/pi/pupperv3-monorepo/ros2_ws/install/pupper_v3_description/share/pupper_v3_description/description/mujoco_xml/pupper_v3_complete.mjx.position.no_body.xml
+/home/pi/pupperv3-monorepo/ros2_ws/install/pupper_v3_description/share/pupper_v3_description/description/mujoco_xml/pupper_v3_complete.mjx.position.no_ground.xml
+/home/pi/pupperv3-monorepo/ros2_ws/install/pupper_v3_description/share/pupper_v3_description/description/mujoco_xml/pupper_v3_complete.mjx.position.xml
+/home/pi/pupperv3-monorepo/ros2_ws/install/pupper_v3_description/share/pupper_v3_description/description/mujoco_xml/pupper_v3_complete.mjx.xml
+/home/pi/pupperv3-monorepo/ros2_ws/install/pupper_v3_description/share/pupper_v3_description/description/mujoco_xml/pupper_v3_complete.position.fixed_base.xml
+/home/pi/pupperv3-monorepo/ros2_ws/install/pupper_v3_description/share/pupper_v3_description/description/mujoco_xml/pupper_v3_complete.position.full_collision.no_visual.xml
+/home/pi/pupperv3-monorepo/ros2_ws/install/pupper_v3_description/share/pupper_v3_description/description/mujoco_xml/pupper_v3_complete.position.full_collision.xml
+/home/pi/pupperv3-monorepo/ros2_ws/install/pupper_v3_description/share/pupper_v3_description/description/mujoco_xml/pupper_v3_complete.position.xml
+/home/pi/pupperv3-monorepo/ros2_ws/install/pupper_v3_description/share/pupper_v3_description/description/mujoco_xml/pupper_v3_complete.xml
+/home/pi/pupperv3-monorepo/ros2_ws/install/pupper_v3_description/share/pupper_v3_description/description/mujoco_xml/sensors.xml
+/home/pi/pupperv3-monorepo/ros2_ws/install/pupper_v3_description/share/pupper_v3_description/description/pupper_v3.blend
+/home/pi/pupperv3-monorepo/ros2_ws/install/pupper_v3_description/share/pupper_v3_description/description/pupper_v3.ros2_control.xacro
+/home/pi/pupperv3-monorepo/ros2_ws/install/pupper_v3_description/share/pupper_v3_description/description/pupper_v3.rviz
+/home/pi/pupperv3-monorepo/ros2_ws/install/pupper_v3_description/share/pupper_v3_description/description/pupper_v3.urdf.xacro
+/home/pi/pupperv3-monorepo/ros2_ws/install/pupper_v3_description/share/pupper_v3_description/description/pupper_v3_mujoco.ros2_control.xacro
+/home/pi/pupperv3-monorepo/ros2_ws/install/pupper_v3_description/share/pupper_v3_description/description/pupper_v3_mujoco.urdf.xacro
+/home/pi/pupperv3-monorepo/ros2_ws/install/pupper_v3_description/share/pupper_v3_description/description/pupper_v3_mujoco_fixed_base.ros2_control.xacro
+/home/pi/pupperv3-monorepo/ros2_ws/install/pupper_v3_description/share/pupper_v3_description/description/urdf/pupper_v3.edited.fixed.no_visual.urdf
+/home/pi/pupperv3-monorepo/ros2_ws/install/pupper_v3_description/share/pupper_v3_description/description/urdf/pupper_v3.edited.fixed.urdf
+/home/pi/pupperv3-monorepo/ros2_ws/install/pupper_v3_description/share/pupper_v3_description/description/urdf/pupper_v3.edited.urdf
+/home/pi/pupperv3-monorepo/ros2_ws/install/pupper_v3_description/share/pupper_v3_description/description/urdf/pupper_v3.urdf
+/home/pi/pupperv3-monorepo/ros2_ws/install/pupper_v3_description/share/pupper_v3_description/launch/display_model.launch.py
+/home/pi/pupperv3-monorepo/ros2_ws/install/pupper_v3_description/share/pupper_v3_description/launch/robot_state_publisher.launch.py
+/home/pi/pupperv3-monorepo/ros2_ws/install/pupper_v3_description/share/pupper_v3_description/launch/rviz_only.launch.py
+/home/pi/pupperv3-monorepo/ros2_ws/install/pupper_v3_description/share/ament_index/resource_index/package_run_dependencies/pupper_v3_description
+/home/pi/pupperv3-monorepo/ros2_ws/install/pupper_v3_description/share/ament_index/resource_index/parent_prefix_path/pupper_v3_description
+/home/pi/pupperv3-monorepo/ros2_ws/install/pupper_v3_description/share/pupper_v3_description/environment/ament_prefix_path.sh
+/home/pi/pupperv3-monorepo/ros2_ws/install/pupper_v3_description/share/pupper_v3_description/environment/ament_prefix_path.dsv
+/home/pi/pupperv3-monorepo/ros2_ws/install/pupper_v3_description/share/pupper_v3_description/environment/path.sh
+/home/pi/pupperv3-monorepo/ros2_ws/install/pupper_v3_description/share/pupper_v3_description/environment/path.dsv
+/home/pi/pupperv3-monorepo/ros2_ws/install/pupper_v3_description/share/pupper_v3_description/local_setup.bash
+/home/pi/pupperv3-monorepo/ros2_ws/install/pupper_v3_description/share/pupper_v3_description/local_setup.sh
+/home/pi/pupperv3-monorepo/ros2_ws/install/pupper_v3_description/share/pupper_v3_description/local_setup.zsh
+/home/pi/pupperv3-monorepo/ros2_ws/install/pupper_v3_description/share/pupper_v3_description/local_setup.dsv
+/home/pi/pupperv3-monorepo/ros2_ws/install/pupper_v3_description/share/pupper_v3_description/package.dsv
+/home/pi/pupperv3-monorepo/ros2_ws/install/pupper_v3_description/share/ament_index/resource_index/packages/pupper_v3_description
+/home/pi/pupperv3-monorepo/ros2_ws/install/pupper_v3_description/share/pupper_v3_description/cmake/pupper_v3_descriptionConfig.cmake
+/home/pi/pupperv3-monorepo/ros2_ws/install/pupper_v3_description/share/pupper_v3_description/cmake/pupper_v3_descriptionConfig-version.cmake
+/home/pi/pupperv3-monorepo/ros2_ws/install/pupper_v3_description/share/pupper_v3_description/package.xml

@@ -1,0 +1,4 @@
+source;share/neural_controller/local_setup.bash
+source;share/neural_controller/local_setup.dsv
+source;share/neural_controller/local_setup.sh
+source;share/neural_controller/local_setup.zsh

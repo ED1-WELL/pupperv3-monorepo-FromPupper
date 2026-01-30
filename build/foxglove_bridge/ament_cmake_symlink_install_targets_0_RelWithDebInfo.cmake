@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/pi/pupperv3-monorepo/ros2_ws/build/foxglove_bridge/libfoxglove_bridge_component.so" "TARGETS" "foxglove_bridge_component" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")

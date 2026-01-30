@@ -1,0 +1,4 @@
+[console_scripts]
+example_node = hailo.example_node:main
+hailo_detection = hailo.hailo_detection:main
+mock_camera = hailo.mock_camera:main

@@ -1,0 +1,2 @@
+[console_scripts]
+ros_node = openai_bridge.ros_node:main

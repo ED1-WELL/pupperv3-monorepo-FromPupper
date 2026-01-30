@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: bag-recorder
+Version: 0.0.0
+Summary: ROS2 bag recorder controlled by joystick buttons
+Maintainer: Your Name
+Maintainer-email: your@email.com
+License: MIT

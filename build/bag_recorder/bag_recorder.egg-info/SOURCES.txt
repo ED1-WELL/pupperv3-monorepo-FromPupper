@@ -1,0 +1,14 @@
+package.xml
+setup.cfg
+setup.py
+bag_recorder/__init__.py
+bag_recorder/bag_recorder_node.py
+bag_recorder.egg-info/PKG-INFO
+bag_recorder.egg-info/SOURCES.txt
+bag_recorder.egg-info/dependency_links.txt
+bag_recorder.egg-info/entry_points.txt
+bag_recorder.egg-info/requires.txt
+bag_recorder.egg-info/top_level.txt
+bag_recorder.egg-info/zip-safe
+launch/bag_recorder.launch.py
+resource/bag_recorder

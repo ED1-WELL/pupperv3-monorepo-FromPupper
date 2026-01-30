@@ -1,0 +1,4 @@
+source;share/rosx_introspection/local_setup.bash
+source;share/rosx_introspection/local_setup.dsv
+source;share/rosx_introspection/local_setup.sh
+source;share/rosx_introspection/local_setup.zsh

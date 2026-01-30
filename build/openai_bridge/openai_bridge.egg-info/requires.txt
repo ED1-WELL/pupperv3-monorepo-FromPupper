@@ -1,0 +1,6 @@
+numpy
+openai[realtime]
+pyaudio
+pydub
+setuptools
+sounddevice

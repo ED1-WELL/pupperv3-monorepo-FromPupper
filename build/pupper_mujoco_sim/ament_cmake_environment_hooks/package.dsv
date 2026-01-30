@@ -1,0 +1,4 @@
+source;share/pupper_mujoco_sim/local_setup.bash
+source;share/pupper_mujoco_sim/local_setup.dsv
+source;share/pupper_mujoco_sim/local_setup.sh
+source;share/pupper_mujoco_sim/local_setup.zsh

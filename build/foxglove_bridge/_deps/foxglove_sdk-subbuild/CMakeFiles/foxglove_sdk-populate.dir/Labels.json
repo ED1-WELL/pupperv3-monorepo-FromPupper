@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/pi/pupperv3-monorepo/ros2_ws/build/foxglove_bridge/_deps/foxglove_sdk-subbuild/CMakeFiles/foxglove_sdk-populate"
+		},
+		{
+			"file" : "/home/pi/pupperv3-monorepo/ros2_ws/build/foxglove_bridge/_deps/foxglove_sdk-subbuild/CMakeFiles/foxglove_sdk-populate.rule"
+		},
+		{
+			"file" : "/home/pi/pupperv3-monorepo/ros2_ws/build/foxglove_bridge/_deps/foxglove_sdk-subbuild/CMakeFiles/foxglove_sdk-populate-complete.rule"
+		},
+		{
+			"file" : "/home/pi/pupperv3-monorepo/ros2_ws/build/foxglove_bridge/_deps/foxglove_sdk-subbuild/foxglove_sdk-populate-prefix/src/foxglove_sdk-populate-stamp/foxglove_sdk-populate-build.rule"
+		},
+		{
+			"file" : "/home/pi/pupperv3-monorepo/ros2_ws/build/foxglove_bridge/_deps/foxglove_sdk-subbuild/foxglove_sdk-populate-prefix/src/foxglove_sdk-populate-stamp/foxglove_sdk-populate-configure.rule"
+		},
+		{
+			"file" : "/home/pi/pupperv3-monorepo/ros2_ws/build/foxglove_bridge/_deps/foxglove_sdk-subbuild/foxglove_sdk-populate-prefix/src/foxglove_sdk-populate-stamp/foxglove_sdk-populate-download.rule"
+		},
+		{
+			"file" : "/home/pi/pupperv3-monorepo/ros2_ws/build/foxglove_bridge/_deps/foxglove_sdk-subbuild/foxglove_sdk-populate-prefix/src/foxglove_sdk-populate-stamp/foxglove_sdk-populate-install.rule"
+		},
+		{
+			"file" : "/home/pi/pupperv3-monorepo/ros2_ws/build/foxglove_bridge/_deps/foxglove_sdk-subbuild/foxglove_sdk-populate-prefix/src/foxglove_sdk-populate-stamp/foxglove_sdk-populate-mkdir.rule"
+		},
+		{
+			"file" : "/home/pi/pupperv3-monorepo/ros2_ws/build/foxglove_bridge/_deps/foxglove_sdk-subbuild/foxglove_sdk-populate-prefix/src/foxglove_sdk-populate-stamp/foxglove_sdk-populate-patch.rule"
+		},
+		{
+			"file" : "/home/pi/pupperv3-monorepo/ros2_ws/build/foxglove_bridge/_deps/foxglove_sdk-subbuild/foxglove_sdk-populate-prefix/src/foxglove_sdk-populate-stamp/foxglove_sdk-populate-test.rule"
+		},
+		{
+			"file" : "/home/pi/pupperv3-monorepo/ros2_ws/build/foxglove_bridge/_deps/foxglove_sdk-subbuild/foxglove_sdk-populate-prefix/src/foxglove_sdk-populate-stamp/foxglove_sdk-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"foxglove_sdk-populate"
+		],
+		"name" : "foxglove_sdk-populate"
+	}
+}

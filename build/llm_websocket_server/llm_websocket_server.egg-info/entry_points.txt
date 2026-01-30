@@ -1,0 +1,2 @@
+[console_scripts]
+websocket_server = llm_websocket_server.websocket_server:main

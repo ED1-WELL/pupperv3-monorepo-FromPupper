@@ -1,0 +1,106 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-RelWithDebInfo-e4f59aa9050775814ab1.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"name" : "RelWithDebInfo",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "pupper_mujoco_sim",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "basic::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-basic-RelWithDebInfo-ffa5b2aafe15307ba715.json",
+					"name" : "basic",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "compile::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-compile-RelWithDebInfo-c9b653b1361d040817ef.json",
+					"name" : "compile",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mujoco_hardware_interface::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mujoco_hardware_interface-RelWithDebInfo-46cca323223eb6f240b4.json",
+					"name" : "mujoco_hardware_interface",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "pupper_mujoco_sim_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-pupper_mujoco_sim_uninstall-RelWithDebInfo-140756f60364514b2306.json",
+					"name" : "pupper_mujoco_sim_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "simulate::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-simulate-RelWithDebInfo-f1100337c3227c5b9793.json",
+					"name" : "simulate",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-RelWithDebInfo-41d7262a3bc8e7ea2660.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/pi/pupperv3-monorepo/ros2_ws/build/pupper_mujoco_sim",
+		"source" : "/home/pi/pupperv3-monorepo/ros2_ws/src/pupperv3_mujoco_sim"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}

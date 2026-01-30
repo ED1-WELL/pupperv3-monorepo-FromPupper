@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/pi/pupperv3-monorepo/ros2_ws/build/pupper_mujoco_sim/libmujoco_hardware_interface.so" "TARGETS" "mujoco_hardware_interface" "DESTINATION" "lib")

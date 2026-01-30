@@ -1,0 +1,4 @@
+source;share/real2sim_controller/local_setup.bash
+source;share/real2sim_controller/local_setup.dsv
+source;share/real2sim_controller/local_setup.sh
+source;share/real2sim_controller/local_setup.zsh

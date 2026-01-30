@@ -1,0 +1,2 @@
+[console_scripts]
+bag_recorder_node = bag_recorder.bag_recorder_node:main

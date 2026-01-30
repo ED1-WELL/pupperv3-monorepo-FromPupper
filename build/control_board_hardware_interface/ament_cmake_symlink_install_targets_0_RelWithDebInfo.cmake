@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/pi/pupperv3-monorepo/ros2_ws/build/control_board_hardware_interface/libcontrol_board_hardware_interface.so" "TARGETS" "control_board_hardware_interface" "DESTINATION" "lib")

@@ -1,0 +1,88 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-RelWithDebInfo-3d9ca830ec39c24bd127.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "RelWithDebInfo",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "real2sim_controller",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "real2sim_controller::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-real2sim_controller-RelWithDebInfo-3410a058dbcd4665a872.json",
+					"name" : "real2sim_controller",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "real2sim_controller_parameters::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-real2sim_controller_parameters-RelWithDebInfo-763cfec863f3b6cffbb5.json",
+					"name" : "real2sim_controller_parameters",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "real2sim_controller_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-real2sim_controller_uninstall-RelWithDebInfo-7352537f0f2ca19dd9fe.json",
+					"name" : "real2sim_controller_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-RelWithDebInfo-033f9e25fd719f623cca.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/pi/pupperv3-monorepo/ros2_ws/build/real2sim_controller",
+		"source" : "/home/pi/pupperv3-monorepo/ros2_ws/src/real2sim_controller"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}

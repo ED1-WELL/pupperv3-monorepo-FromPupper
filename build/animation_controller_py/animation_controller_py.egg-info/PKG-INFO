@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: animation-controller-py
+Version: 0.0.0
+Summary: Python animation controller that publishes to forward command controllers
+Maintainer: nathankau
+Maintainer-email: nathankau@gmail.com
+License: Apache-2.0

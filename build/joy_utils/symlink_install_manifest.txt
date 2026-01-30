@@ -1,0 +1,16 @@
+/home/pi/pupperv3-monorepo/ros2_ws/install/joy_utils/lib/joy_utils/estop_controller
+/home/pi/pupperv3-monorepo/ros2_ws/install/joy_utils/share/ament_index/resource_index/package_run_dependencies/joy_utils
+/home/pi/pupperv3-monorepo/ros2_ws/install/joy_utils/share/ament_index/resource_index/parent_prefix_path/joy_utils
+/home/pi/pupperv3-monorepo/ros2_ws/install/joy_utils/share/joy_utils/environment/ament_prefix_path.sh
+/home/pi/pupperv3-monorepo/ros2_ws/install/joy_utils/share/joy_utils/environment/ament_prefix_path.dsv
+/home/pi/pupperv3-monorepo/ros2_ws/install/joy_utils/share/joy_utils/environment/path.sh
+/home/pi/pupperv3-monorepo/ros2_ws/install/joy_utils/share/joy_utils/environment/path.dsv
+/home/pi/pupperv3-monorepo/ros2_ws/install/joy_utils/share/joy_utils/local_setup.bash
+/home/pi/pupperv3-monorepo/ros2_ws/install/joy_utils/share/joy_utils/local_setup.sh
+/home/pi/pupperv3-monorepo/ros2_ws/install/joy_utils/share/joy_utils/local_setup.zsh
+/home/pi/pupperv3-monorepo/ros2_ws/install/joy_utils/share/joy_utils/local_setup.dsv
+/home/pi/pupperv3-monorepo/ros2_ws/install/joy_utils/share/joy_utils/package.dsv
+/home/pi/pupperv3-monorepo/ros2_ws/install/joy_utils/share/ament_index/resource_index/packages/joy_utils
+/home/pi/pupperv3-monorepo/ros2_ws/install/joy_utils/share/joy_utils/cmake/joy_utilsConfig.cmake
+/home/pi/pupperv3-monorepo/ros2_ws/install/joy_utils/share/joy_utils/cmake/joy_utilsConfig-version.cmake
+/home/pi/pupperv3-monorepo/ros2_ws/install/joy_utils/share/joy_utils/package.xml

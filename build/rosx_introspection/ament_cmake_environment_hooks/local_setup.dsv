@@ -1,0 +1,3 @@
+source;share/rosx_introspection/environment/ament_prefix_path.sh
+source;share/rosx_introspection/environment/library_path.sh
+source;share/rosx_introspection/environment/path.sh

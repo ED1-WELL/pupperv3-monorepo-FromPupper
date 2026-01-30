@@ -1,0 +1,2 @@
+[console_scripts]
+animation_controller_py = animation_controller_py.animation_controller:main
