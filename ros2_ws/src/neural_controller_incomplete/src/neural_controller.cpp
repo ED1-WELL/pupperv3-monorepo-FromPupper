@@ -191,10 +191,17 @@ controller_interface::CallbackReturn NeuralController::on_activate(
         state_interface.get_interface_name(), std::ref(state_interface));
   }
 
-  // Store the initial joint positions
+  // Store the initial joint positions/velocities based on action type
   for (int i = 0; i < kActionSize; i++) {
-    init_joint_pos_.at(i) =
-        state_interfaces_map_.at(params_.joint_names.at(i)).at("position").get().get_value();
+    if (params_.action_types.at(i) == "velocity") {
+      // For velocity-controlled joints (wheels), read current velocity
+      init_joint_pos_.at(i) =
+          state_interfaces_map_.at(params_.joint_names.at(i)).at("velocity").get().get_value();
+    } else {
+      // For position-controlled joints (legs), read current position
+      init_joint_pos_.at(i) =
+          state_interfaces_map_.at(params_.joint_names.at(i)).at("position").get().get_value();
+    }
   }
 
   // Reset estop caused by falling over
@@ -322,19 +329,30 @@ controller_interface::return_type NeuralController::update(const rclcpp::Time &t
   double time_since_init = (time - init_time_).seconds();
   if (time_since_init < params_.init_duration) {
     for (int i = 0; i < kActionSize; i++) {
-      // Interpolate between the initial joint positions and the default joint
-      // positions
-      double interpolated_joint_pos =
+      // Interpolate between the initial joint positions and the default joint positions
+      double interpolated_value =
           init_joint_pos_.at(i) * (1 - time_since_init / params_.init_duration) +
           params_.default_joint_pos.at(i) * (time_since_init / params_.init_duration);
+      
+      // Use the correct command interface based on action_type
       command_interfaces_map_.at(params_.joint_names.at(i))
-          .at("position")
+          .at(params_.action_types.at(i))
           .get()
-          .set_value(interpolated_joint_pos);
-      command_interfaces_map_.at(params_.joint_names.at(i))
-          .at("kp")
-          .get()
-          .set_value(params_.init_kps.at(i));
+          .set_value(interpolated_value);
+      
+      // Set KP appropriately (0 for velocity, configured value for position)
+      if (params_.action_types.at(i) == "velocity") {
+        command_interfaces_map_.at(params_.joint_names.at(i))
+            .at("kp")
+            .get()
+            .set_value(0.0);
+      } else {
+        command_interfaces_map_.at(params_.joint_names.at(i))
+            .at("kp")
+            .get()
+            .set_value(params_.init_kps.at(i));
+      }
+      
       command_interfaces_map_.at(params_.joint_names.at(i))
           .at("kd")
           .get()
