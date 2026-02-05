@@ -622,7 +622,7 @@ controller_interface::return_type NeuralController::update(const rclcpp::Time &t
       action_.at(i) = std::clamp(unclipped, lower_limit, upper_limit);
     } else {
       // Scale by 20.0 to fix low torque/speed on wheels (sim-to-real mismatch)
-      action_.at(i) = fade_in_multiplier * action * action_scale * 50.0f;
+      action_.at(i) = fade_in_multiplier * action * action_scale * 5.0f;
     }
 
     if (std::isnan(action_.at(i))) {
