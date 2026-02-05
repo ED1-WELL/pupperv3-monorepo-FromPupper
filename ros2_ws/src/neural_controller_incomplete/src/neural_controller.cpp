@@ -499,14 +499,12 @@ controller_interface::return_type NeuralController::update(const rclcpp::Time &t
 
     // Joint positions
     for (int i = 0; i < kActionSize; i++) {
-      // Only include the joint position in the observation if the action type
-      // is position
-      if (params_.action_types.at(i) == "position") {
-        RCLCPP_DEBUG(get_node()->get_logger(), "Attempting to read joint position for %s (index %d)", params_.joint_names.at(i).c_str(), i);
-        float joint_pos =
-            state_interfaces_map_.at(params_.joint_names.at(i)).at("position").get().get_value();
-        observation_.at(kJointPositionIdx + i) = joint_pos - params_.default_joint_pos.at(i);
-      }
+      // Always include the joint position in the observation
+      // The policy uses a history of positions to infer velocity
+      RCLCPP_DEBUG(get_node()->get_logger(), "Attempting to read joint position for %s (index %d)", params_.joint_names.at(i).c_str(), i);
+      float joint_pos =
+          state_interfaces_map_.at(params_.joint_names.at(i)).at("position").get().get_value();
+      observation_.at(kJointPositionIdx + i) = joint_pos - params_.default_joint_pos.at(i);
     }
   } catch (const std::out_of_range &e) {
     RCLCPP_ERROR(get_node()->get_logger(), "Failed to read states from hardware interface - std::out_of_range exception: %s", e.what());
@@ -623,7 +621,8 @@ controller_interface::return_type NeuralController::update(const rclcpp::Time &t
       float unclipped = fade_in_multiplier * action * action_scale + default_joint_pos;
       action_.at(i) = std::clamp(unclipped, lower_limit, upper_limit);
     } else {
-      action_.at(i) = fade_in_multiplier * action * action_scale;
+      // Scale by 20.0 to fix low torque/speed on wheels (sim-to-real mismatch)
+      action_.at(i) = fade_in_multiplier * action * action_scale * 20.0f;
     }
 
     if (std::isnan(action_.at(i))) {
