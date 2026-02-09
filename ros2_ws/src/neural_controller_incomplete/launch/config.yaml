@@ -20,6 +20,10 @@ controller_manager:
     forward_kd_controller:
       type: forward_command_controller/ForwardCommandController
 
+    # For wheel velocity control
+    forward_velocity_controller:
+      type: forward_command_controller/ForwardCommandController
+
     joint_state_broadcaster:
       type: joint_state_broadcaster/JointStateBroadcaster
 
@@ -181,7 +185,8 @@ joy_util_node:
     estop_index: 12
     estop_release_index: 9
     controller_names: ["neural_controller", "neural_controller_three_legged", "forward_kp_controller", "forward_kd_controller", "forward_position_controller"]
-    switch_button_indices: [0, 1]
+    switch_button_indices: [0, 1, 2]  # Added button 2 for wheeled_pd mode
+
 
 # Forward command controllers for animation system
 forward_position_controller:
@@ -280,3 +285,52 @@ bag_recorder:
     record_stop_button: 5 # R1 button
     bag_output_dir: "~/bags"
     start_button_hold_duration: 1.0 # 1 second
+
+# Wheeled PD Controller - simple PD control for wheeled Pupper
+wheeled_pd_controller:
+  ros__parameters:
+    # Joint names (same order as neural_controller)
+    joint_names:
+      [
+        "leg_front_r_1",
+        "leg_front_r_2",
+        "leg_front_r_3",
+        "leg_front_l_1",
+        "leg_front_l_2",
+        "leg_front_l_3",
+        "leg_back_r_1",
+        "leg_back_r_2",
+        "leg_back_r_3",
+        "leg_back_l_1",
+        "leg_back_l_2",
+        "leg_back_l_3",
+      ]
+
+    # Standing pose for legs (wheels use velocity control, so their values are 0)
+    # Tune these for your desired standing height/angle
+    default_joint_pos:
+      [-0.75, 0.0, 0.0, 0.75, 0.0, 0.0, -0.75, 0.0, 0.0, 0.75, 0.0, 0.0]
+
+    # Leg PD gains (position holding)
+    leg_kp: 3.25
+    leg_kd: 0.5
+
+    # Wheel velocity gain (D-only control)
+    # Start low and increase if wheels are too slow
+    wheel_kd: 0.5
+
+    # Robot geometry for differential drive
+    wheel_separation: 0.167  # meters (left-right distance between wheels)
+    wheel_radius: 0.04445   # meters
+
+    # Safety limits
+    max_wheel_velocity: 10.0  # rad/s
+
+    # Control rate
+    control_rate: 50.0  # Hz
+
+    # Initialization (smooth transition to standing pose)
+    init_duration: 2.0
+    init_kp: 3.25
+    init_kd: 0.5
+

@@ -261,6 +261,15 @@ def generate_launch_description():
         output="both",
     )
 
+    wheeled_pd_controller_node = Node(
+        package="animation_controller_py",
+        executable="wheeled_pd_controller",
+        name="wheeled_pd_controller",
+        parameters=[node_parameters],
+        output="both",
+    )
+
+
     # Provides a throttled version of /joint_states to reduce CPU usage in animation_controller_py
     joint_state_throttler = Node(
         package="topic_tools",
@@ -310,6 +319,7 @@ def generate_launch_description():
         bag_recorder_node,
         imu_to_tf_node,
         animation_controller_py_node,
+        wheeled_pd_controller_node,
         joint_state_throttler,
         # Detection
         hailo_detection_node,

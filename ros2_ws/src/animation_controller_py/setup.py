@@ -27,6 +27,7 @@ setup(
     entry_points={
         'console_scripts': [
             'animation_controller_py = animation_controller_py.animation_controller:main',
+            'wheeled_pd_controller = animation_controller_py.wheeled_pd_controller:main',
         ],
     },
 )
