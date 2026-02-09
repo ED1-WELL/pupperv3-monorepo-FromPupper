@@ -116,6 +116,10 @@ class WheeledPDController(Node):
         self.kd_pub = self.create_publisher(
             Float64MultiArray, "/forward_kd_controller/commands", 10
         )
+        # Velocity controller for wheels
+        self.velocity_pub = self.create_publisher(
+            Float64MultiArray, "/forward_velocity_controller/commands", 10
+        )
 
         # ==================== Subscribers ====================
         # Velocity commands from joystick
@@ -241,8 +245,7 @@ class WheeledPDController(Node):
                         self.default_joint_pos[i] * alpha
                     )
                 # Wheels: 0 velocity during init
-                for i in self.WHEEL_INDICES:
-                    target_positions[i] = 0.0
+                velocity_cmd = np.zeros(self.ACTION_SIZE)
 
                 # Use init gains
                 kp_array = np.zeros(self.ACTION_SIZE)
@@ -254,7 +257,7 @@ class WheeledPDController(Node):
                     kp_array[i] = 0.0  # No position control for wheels
                     kd_array[i] = self.init_kd
 
-                self.publish_commands(target_positions, kp_array, kd_array)
+                self.publish_commands(target_positions, velocity_cmd, kp_array, kd_array)
                 return
             else:
                 # Initialization complete
@@ -266,10 +269,11 @@ class WheeledPDController(Node):
 
     def run_pd_control(self):
         """Execute PD control for legs and velocity control for wheels."""
-        # Build position command array
+        # Build position command array (legs only)
         position_cmd = np.zeros(self.ACTION_SIZE)
         kp_array = np.zeros(self.ACTION_SIZE)
         kd_array = np.zeros(self.ACTION_SIZE)
+        velocity_cmd = np.zeros(self.ACTION_SIZE)
 
         # Legs: Hold at default standing position
         for i in self.LEG_INDICES:
@@ -283,31 +287,36 @@ class WheeledPDController(Node):
         # Wheel indices: FR=2, FL=5, BR=8, BL=11
         # Right wheels (FR, BR): indices 2, 8
         # Left wheels (FL, BL): indices 5, 11
-        position_cmd[2] = v_right   # FR wheel velocity
-        position_cmd[5] = v_left    # FL wheel velocity
-        position_cmd[8] = v_right   # BR wheel velocity
-        position_cmd[11] = v_left   # BL wheel velocity
+        velocity_cmd[2] = v_right   # FR wheel velocity
+        velocity_cmd[5] = v_left    # FL wheel velocity
+        velocity_cmd[8] = v_right   # BR wheel velocity
+        velocity_cmd[11] = v_left   # BL wheel velocity
 
         # Wheel gains: kp=0 (no position control), kd=wheel_kd
         for i in self.WHEEL_INDICES:
             kp_array[i] = 0.0
             kd_array[i] = self.wheel_kd
 
-        self.publish_commands(position_cmd, kp_array, kd_array)
+        self.publish_commands(position_cmd, velocity_cmd, kp_array, kd_array)
 
     def publish_estop(self):
         """Publish zero commands for emergency stop."""
         position_cmd = np.zeros(self.ACTION_SIZE)
+        velocity_cmd = np.zeros(self.ACTION_SIZE)
         kp_array = np.zeros(self.ACTION_SIZE)
         kd_array = np.full(self.ACTION_SIZE, 0.1)  # Light damping
 
-        self.publish_commands(position_cmd, kp_array, kd_array)
+        self.publish_commands(position_cmd, velocity_cmd, kp_array, kd_array)
 
-    def publish_commands(self, positions: np.ndarray, kps: np.ndarray, kds: np.ndarray):
+    def publish_commands(self, positions: np.ndarray, velocities: np.ndarray, kps: np.ndarray, kds: np.ndarray):
         """Publish commands to forward command controllers."""
         pos_msg = Float64MultiArray()
         pos_msg.data = positions.tolist()
         self.position_pub.publish(pos_msg)
+
+        vel_msg = Float64MultiArray()
+        vel_msg.data = velocities.tolist()
+        self.velocity_pub.publish(vel_msg)
 
         kp_msg = Float64MultiArray()
         kp_msg.data = kps.tolist()
