@@ -184,6 +184,19 @@ def generate_launch_description():
         ],
     )
 
+    forward_velocity_controller_spawner = Node(
+        package="controller_manager",
+        executable="spawner",
+        arguments=[
+            "forward_velocity_controller",
+            "--controller-manager",
+            "/controller_manager",
+            "--controller-manager-timeout",
+            "30",
+            "--inactive",
+        ],
+    )
+
     joint_state_broadcaster_spawner = Node(
         package="controller_manager",
         executable="spawner",
@@ -306,6 +319,7 @@ def generate_launch_description():
         forward_position_controller_spawner,
         forward_kp_controller_spawner,
         forward_kd_controller_spawner,
+        forward_velocity_controller_spawner,
         joint_state_broadcaster_spawner,
         # Comment/uncomment as needed:
         imu_sensor_broadcaster_spawner,
