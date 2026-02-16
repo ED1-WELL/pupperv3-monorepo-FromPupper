@@ -287,9 +287,9 @@ class WheeledPDController(Node):
         # Wheel indices: FR=2, FL=5, BR=8, BL=11
         # Right wheels (FR, BR): indices 2, 8
         # Left wheels (FL, BL): indices 5, 11
-        velocity_cmd[2] = -v_right  # FR wheel velocity (negated - right side mirrored)
+        velocity_cmd[2] = v_right   # FR wheel velocity
         velocity_cmd[5] = v_left    # FL wheel velocity
-        velocity_cmd[8] = -v_right  # BR wheel velocity (negated - right side mirrored)
+        velocity_cmd[8] = v_right   # BR wheel velocity
         velocity_cmd[11] = v_left   # BL wheel velocity
 
         # Wheel gains: kp=0 (no position control), kd=wheel_kd
