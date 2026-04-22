@@ -28,7 +28,7 @@ setup(
         'console_scripts': [
             'animation_controller_py = animation_controller_py.animation_controller:main',
             'wheeled_pd_controller = animation_controller_py.wheeled_pd_controller:main',
-            'wheel_reshaper = animation_controller_py.wheel_reshaper:main',
+            'leg_lift_controller = animation_controller_py.leg_lift_controller:main',
         ],
     },
 )

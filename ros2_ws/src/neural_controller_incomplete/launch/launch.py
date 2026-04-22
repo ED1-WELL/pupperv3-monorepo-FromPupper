@@ -282,15 +282,6 @@ def generate_launch_description():
         output="both",
     )
 
-    wheel_reshaper_node = Node(
-        package="animation_controller_py",
-        executable="wheel_reshaper",
-        name="wheel_reshaper",
-        parameters=[node_parameters],
-        output="both",
-    )
-
-
     # Provides a throttled version of /joint_states to reduce CPU usage in animation_controller_py
     joint_state_throttler = Node(
         package="topic_tools",
@@ -342,7 +333,6 @@ def generate_launch_description():
         imu_to_tf_node,
         animation_controller_py_node,
         wheeled_pd_controller_node,
-        wheel_reshaper_node,
         joint_state_throttler,
         # Detection
         hailo_detection_node,

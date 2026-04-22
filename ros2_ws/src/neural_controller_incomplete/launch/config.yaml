@@ -351,49 +351,38 @@ wheeled_pd_controller:
     init_kp: 3.25
     init_kd: 0.5
 
-# Wheel Reshaper - timed sequence for heat memory polymer transformation
-wheel_reshaper:
+# Leg Lift Controller - lifts front-right leg to horizontal for manual leg reattachment
+leg_lift_controller:
   ros__parameters:
     joint_names:
       [
-        "leg_front_r_1",
-        "leg_front_r_2",
-        "leg_front_r_3",
-        "leg_front_l_1",
-        "leg_front_l_2",
-        "leg_front_l_3",
-        "leg_back_r_1",
-        "leg_back_r_2",
-        "leg_back_r_3",
-        "leg_back_l_1",
-        "leg_back_l_2",
-        "leg_back_l_3",
+        "leg_front_r_1", "leg_front_r_2", "leg_front_r_3",
+        "leg_front_l_1", "leg_front_l_2", "leg_front_l_3",
+        "leg_back_r_1",  "leg_back_r_2",  "leg_back_r_3",
+        "leg_back_l_1",  "leg_back_l_2",  "leg_back_l_3",
       ]
 
-    # Standing pose (same as wheeled_pd_controller)
+    # Walking default pose — robot stands here before the lift begins
     default_joint_pos:
-      [-0.75, 0.0, 0.0, 0.75, 0.0, 0.0, -0.75, 0.0, 0.0, 0.75, 0.0, 0.0]
+      [0.26, 0.0, -0.52, -0.26, 0.0, 0.52, 0.26, 0.0, -0.52, -0.26, 0.0, 0.52]
 
-    # PD gains for legs and wheels
-    leg_kp: 3.25
-    leg_kd: 0.5
-    wheel_kp: 3.25
-    wheel_kd: 0.5
+    # Target angles for FR leg when parallel to ground.
+    # Tune fr_lift_pos_2 (upper leg) first — increase if leg doesn't reach horizontal.
+    fr_lift_pos_1: 0.26   # hip ab/ad  — keep same as default
+    fr_lift_pos_2: 1.5    # upper leg  — ~85° forward/upward
+    fr_lift_pos_3: 0.5    # lower leg  — slight forward extension
 
-    # Control rate (Hz)
-    control_rate: 50.0
+    # Support leg gains (FL, BR, BL)
+    support_kp: 7.5
+    support_kd: 0.35
 
-    # Initialization duration (seconds)
-    init_duration: 2.0
+    # Lifted leg gains (softer for smooth motion)
+    lift_kp: 5.0
+    lift_kd: 0.3
 
-    # Hold durations (seconds) — time for polymer to reshape under weight
-    phase1_hold_duration: 30.0
-    phase3_hold_duration: 30.0
+    # Phase durations (seconds)
+    init_duration:  3.0   # time to move from current pose to default
+    stand_duration: 1.0   # pause at default before lifting
+    lift_duration:  5.0   # time to complete the lift
 
-    # Rotation angles (radians)
-    backward_angle: 1.5708    # π/2 = 90°
-    forward_angle: 0.7854     # π/4 = 45°
-
-    # How long to interpolate each rotation (seconds)
-    rotation_duration: 3.0
-
+    control_rate: 50.0    # Hz
